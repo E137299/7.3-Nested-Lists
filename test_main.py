@@ -10,7 +10,7 @@ def test_view_list():
 
 def test_view_item():
     assert view_item([['tooth paste', 'q-tips', 'milk'],['milk', 'candy', 'apples'],['planner', 'pencils', 'q-tips']],2,0) == "planner"
-    assert view_list([["a","b","c"],["d","e","f"],["g","h","j"]],1,0) == "d"
+    assert view_item([["a","b","c"],["d","e","f"],["g","h","j"]],1,0) == "d"
 
 def test_all_in_one():
     assert all_in_one([['tooth paste', 'q-tips', 'milk'],['milk', 'candy', 'apples'],['planner', 'pencils', 'q-tips']]) == ['tooth paste', 'q-tips', 'milk', 'milk', 'candy', 'apples','planner', 'pencils', 'q-tips']

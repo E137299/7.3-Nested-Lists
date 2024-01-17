@@ -22,7 +22,6 @@ def view_item(list,listIndex, itemIndex):
 shopping_cart = [['tooth paste', 'q-tips', 'milk'],['milk', 'candy', 'apples'],['planner', 'pencils', 'q-tips']]
 def view_list(list, listIndex):
 	pass
-
 	
 
 
@@ -35,10 +34,9 @@ shopping_cart = [['tooth paste', 'q-tips', 'milk'],['milk', 'candy', 'apples'],[
 def count_item(list, item):
 	pass
 
-
 shopping_cart = [['tooth paste', 'q-tips', 'milk'],['milk', 'candy', 'apples'],['planner', 'pencils', 'q-tips']]
 def drink_more_milk(list):
-	pass 
+	pass
 
 shopping_cart = [['tooth paste', 'q-tips', 'milk'],['milk', 'candy', 'apples'],['planner', 'pencils', 'q-tips']]
 def if_you_give_a_moose_a_cookie(list):
@@ -47,4 +45,7 @@ def if_you_give_a_moose_a_cookie(list):
 
 shopping_cart = [['tooth paste', 'q-tips', 'milk'],['milk', 'candy', 'apples'],['planner', 'pencils', 'q-tips']]
 def reverse_lists_and_items(list):
-	pass
+	for inner in list:
+		inner = inner[::]
+	list = list[::]
+	return list
