@@ -29,5 +29,5 @@ def test_if_you_give_a_moose_a_cookie():
     assert if_you_give_a_moose_a_cookie([["a","b","c"],["d","e","f"],["g","h","j"]]) == [["a","b","c"],["d","e","f"],["g","h","j"]]
 
 def test_reverse_lists_and_items():
-    assert reverse_lists_and_items([['tooth paste', 'q-tips', 'milk'],['milk', 'candy', 'apples'],['planner', 'pencils', 'q-tips']]) == [['q-tips','pencil','planner'],['apples','candy','milk'],['milk','q-tips','tooth paste']]
+    assert reverse_lists_and_items([['tooth paste', 'q-tips', 'milk'],['milk', 'candy', 'apples'],['planner', 'pencils', 'q-tips']]) == [['q-tips','pencils','planner'],['apples','candy','milk'],['milk','q-tips','tooth paste']]
     assert reverse_lists_and_items([["a","b","c"],["d","e","f"],["g","h","j"]]) == [["j","h","g"],["f","e","d"],["c","b","a"]]
