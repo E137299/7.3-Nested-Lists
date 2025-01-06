@@ -93,7 +93,7 @@ all_in_one(meals)
 *Output:*
 ```python
 ['chicken', 'rice', 'broccoli', 'garlic', 'olive oil', 'spaghetti', 'tomato sauce', 'meatballs', 'parmesan cheese', 'salmon', 'potatoes', 'asparagus', 'lemon', 'butter', 'tofu', 'quinoa', 'spinach', 'peppers', 'soy sauce']
-
+```
 
 ---
 
