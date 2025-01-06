@@ -11,12 +11,17 @@ This function retrieves and returns all the items in a specific shopping list fr
 
 *Function call:*
 ```python
-shopping_cart = [['tooth paste', 'q-tips', 'milk'],['milk', 'candy', 'apples'],['planner', 'pencils', 'q-tips']]
-view_list(shopping_cart, 0)
+meals = [
+    ['chicken', 'rice', 'broccoli', 'garlic', 'olive oil'],
+    ['spaghetti', 'tomato sauce', 'meatballs', 'parmesan cheese', 'olive oil'],
+    ['salmon', 'potatoes', 'asparagus', 'lemon', 'butter'],
+    ['tofu', 'quinoa', 'spinach', 'peppers', 'soy sauce', 'garlic', 'olive oil']
+]
+view_list(meals, 0)
 ```
 *Output:*
 ```python
-['tooth paste', 'q-tips', 'milk']
+['chicken', 'rice', 'broccoli', 'garlic', 'olive oil']
 ```
 
 ---
@@ -30,12 +35,17 @@ This function accesses and returns an item from a specific position within a spe
 
 *Function call:*
 ```python
-shopping_cart = [['tooth paste', 'q-tips', 'milk'],['milk', 'candy', 'apples'],['planner', 'pencils', 'q-tips']]
-view_item(shopping_cart, 2, 0)
+meals = [
+    ['chicken', 'rice', 'broccoli', 'garlic', 'olive oil'],
+    ['spaghetti', 'tomato sauce', 'meatballs', 'parmesan cheese', 'olive oil'],
+    ['salmon', 'potatoes', 'asparagus', 'lemon', 'butter'],
+    ['tofu', 'quinoa', 'spinach', 'peppers', 'soy sauce', 'garlic', 'olive oil']
+]
+view_item(meals, 2, 0)
 ```
 *Output:*
 ```python
-'planner'
+'salmon'
 ```
 
 ---
@@ -48,31 +58,42 @@ This function updates an item at a given position in a specific shopping list (w
 
 *Function call:*
 ```python
-shopping_cart = [['tooth paste', 'q-tips', 'milk'],['milk', 'candy', 'apples'],['planner', 'pencils', 'q-tips']]
-update_list(shopping_cart, 1, 1, "peppers")
+meals = [
+    ['chicken', 'rice', 'broccoli', 'garlic', 'olive oil'],
+    ['spaghetti', 'tomato sauce', 'meatballs', 'parmesan cheese', 'olive oil'],
+    ['salmon', 'potatoes', 'asparagus', 'lemon', 'butter'],
+    ['tofu', 'quinoa', 'spinach', 'peppers', 'soy sauce', 'garlic', 'olive oil']
+]
+update_list(meals, 2, 2, "peppers")
 ```
 *Output:*
 ```python
-[['tooth paste', 'q-tips', 'milk'],['milk', 'peppers', 'apples'],['planner', 'pencils', 'q-tips']]
+[['chicken', 'rice', 'broccoli', 'garlic', 'olive oil'], ['spaghetti', 'tomato sauce', 'meatballs', 'parmesan cheese', 'olive oil'],['salmon', 'potatoes', 'peppers', 'lemon', 'butter'], ['tofu', 'quinoa', 'spinach', 'peppers', 'soy sauce', 'garlic', 'olive oil']]
 ```
 
 ---
-### Combine all items from nested shopping lists into a single list.
+### Combine all items from nested shopping lists into a single list with no duplicate items.
 
 **Function: `all_in_one(list)`**  
-This function flattens a nested list by combining all individual shopping lists into one list.
+This function combines all items from multiple nested shopping lists into a single list, removing any duplicate items.
 
 **Example:**
 
 *Function call:*
 ```python
-shopping_cart = [['tooth paste', 'q-tips', 'milk'],['milk', 'candy', 'apples'],['planner', 'pencils', 'q-tips']]
-all_in_one(shopping_cart)
+meals = [
+    ['chicken', 'rice', 'broccoli', 'garlic', 'olive oil'],
+    ['spaghetti', 'tomato sauce', 'meatballs', 'parmesan cheese', 'olive oil'],
+    ['salmon', 'potatoes', 'asparagus', 'lemon', 'butter'],
+    ['tofu', 'quinoa', 'spinach', 'peppers', 'soy sauce', 'garlic', 'olive oil']
+]
+all_in_one(meals)
 ```
+
 *Output:*
 ```python
-['tooth paste', 'q-tips', 'milk', 'milk', 'candy', 'apples', 'planner', 'pencils', 'q-tips']
-```
+['chicken', 'rice', 'broccoli', 'garlic', 'olive oil', 'spaghetti', 'tomato sauce', 'meatballs', 'parmesan cheese', 'salmon', 'potatoes', 'asparagus', 'lemon', 'butter', 'tofu', 'quinoa', 'spinach', 'peppers', 'soy sauce']
+
 
 ---
 
@@ -85,12 +106,17 @@ This function counts how many times a specific item appears across all shopping 
 
 *Function call:*
 ```python
-shopping_cart = [['tooth paste', 'q-tips', 'milk'],['milk', 'candy', 'apples'],['planner', 'pencils', 'q-tips']]
-count_item(shopping_cart, "milk")
+meals = [
+    ['chicken', 'rice', 'broccoli', 'garlic', 'olive oil'],
+    ['spaghetti', 'tomato sauce', 'meatballs', 'parmesan cheese', 'olive oil'],
+    ['salmon', 'potatoes', 'asparagus', 'lemon', 'butter'],
+    ['tofu', 'quinoa', 'spinach', 'peppers', 'soy sauce', 'garlic', 'olive oil']
+]
+count_item(shopping_cart, "olive oil")
 ```
 *Output:*
 ```python
-2
+3
 ```
 
 ---
@@ -104,31 +130,41 @@ This function ensures that "milk" is added to each shopping list in the nested l
 
 *Function call:*
 ```python
-shopping_cart = [['tooth paste', 'q-tips', 'milk'],['milk', 'candy', 'apples'],['planner', 'pencils', 'q-tips']]
-drink_more_milk(shopping_cart)
+meal_plan = [
+    ['eggs', 'toast', 'orange juice'],
+    ['pancakes', 'bacon', 'milk', 'syrup'],
+    ['salad', 'chicken', 'bread'],
+    ['cereal', 'milk', 'banana']
+]
+drink_more_milk(meal_plan)
 ```
 *Output:*
 ```python
-[['tooth paste', 'q-tips', 'milk'],['milk', 'candy', 'apples'],['planner', 'pencils', 'q-tips', 'milk']]
+[['eggs', 'toast', 'orange juice', 'milk'],['pancakes', 'bacon', 'milk', 'syrup'],['salad', 'chicken', 'bread', 'milk'],['cereal', 'milk', 'banana']]
 ```
 
 ---
 
 ### Modify "milk" to "milk and cookies" in all lists.
 
-**Function: `if_you_give_a_moose_a_cookie(list)`**  
+**Function: `add_a_cookie(list)`**  
 This function updates every occurrence of "milk" in the shopping lists to "milk and cookies."
 
 **Example:**
 
 *Function call:*
 ```python
-shopping_cart = [['tooth paste', 'q-tips', 'milk'],['milk', 'candy', 'apples'],['planner', 'pencils', 'q-tips']]
-if_you_give_a_moose_a_cookie(shopping_cart)
+meal_plan = [
+    ['eggs', 'toast', 'orange juice'],
+    ['pancakes', 'bacon', 'milk', 'syrup'],
+    ['salad', 'chicken', 'bread'],
+    ['cereal', 'milk', 'banana']
+]
+add_a_cookie(meal_plan)
 ```
 *Output:*
 ```python
-[['tooth paste', 'q-tips', 'milk and cookies'],['milk and cookies', 'candy', 'apples'],['planner', 'pencils', 'q-tips']]
+[['eggs', 'toast', 'orange juice'],['pancakes', 'bacon', 'milk and cookies', 'syrup'],['salad', 'chicken', 'bread'],['cereal', 'milk and cookies', 'banana']]
 ```
 
 ---
@@ -142,10 +178,15 @@ This function reverses the order of the shopping lists, as well as the order of 
 
 *Function call:*
 ```python
-shopping_cart = [['tooth paste', 'q-tips', 'milk'],['milk', 'candy', 'apples'],['planner', 'pencils', 'q-tips']]
-reverse_lists_and_items(shopping_cart)
+meal_plan = [
+    ['eggs', 'toast', 'orange juice'],
+    ['pancakes', 'bacon', 'milk', 'syrup'],
+    ['salad', 'chicken', 'bread'],
+    ['cereal', 'milk', 'banana']
+]
+reverse_lists_and_items(meal_plan)
 ```
 *Output:*
 ```python
-[['q-tips', 'pencils', 'planner'], ['apples', 'candy', 'milk'], ['milk', 'q-tips', 'tooth paste']]
+[['banana', 'milk', 'cereal'], ['bread', 'chicken', 'salad'], ['syrup', 'milk', 'bacon', 'pancakes'],['orange juice', 'toast', 'eggs']
 ```
