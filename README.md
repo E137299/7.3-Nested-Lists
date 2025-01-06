@@ -1,10 +1,4 @@
-
-
-Here’s a revised version of the assignment with clearer objectives for each challenge:
-
----
-
-### 7.3-Nested-Lists
+# 7.3-Nested-Lists
 
 ---
 
