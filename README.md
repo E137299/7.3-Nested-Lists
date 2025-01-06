@@ -2,26 +2,7 @@
 
 ---
 
-### **Objective:** Update a specific item in a nested shopping list.
-
-**Function: `update_list(list, list_index, item_index, item)`**  
-This function updates an item at a given position in a specific shopping list (within a nested list). It does not alter the length of the list, only the item at the specified index.
-
-**Example:**
-
-*Function call:*
-```python
-shopping_cart = [['tooth paste', 'q-tips', 'milk'],['milk', 'candy', 'apples'],['planner', 'pencils', 'q-tips']]
-update_list(shopping_cart, 1, 1, "peppers")
-```
-*Output:*
-```python
-[['tooth paste', 'q-tips', 'milk'],['milk', 'peppers', 'apples'],['planner', 'pencils', 'q-tips']]
-```
-
----
-
-### **Objective:** View all items in a specific shopping list within a nested list.
+### View all items in a specific shopping list within a nested list.
 
 **Function: `view_list(list, list_index)`**  
 This function retrieves and returns all the items in a specific shopping list from a nested list of shopping lists.
@@ -40,7 +21,7 @@ view_list(shopping_cart, 0)
 
 ---
 
-### **Objective:** Access a specific item in a shopping list at a given index.
+### Access a specific item in a shopping list at a given index.
 
 **Function: `view_item(list, list_index, item_index)`**  
 This function accesses and returns an item from a specific position within a specific shopping list in a nested list.
@@ -58,7 +39,24 @@ view_item(shopping_cart, 2, 0)
 ```
 
 ---
+### Update a specific item in a nested shopping list.
 
+**Function: `update_list(list, list_index, item_index, item)`**  
+This function updates an item at a given position in a specific shopping list (within a nested list). It does not alter the length of the list, only the item at the specified index.
+
+**Example:**
+
+*Function call:*
+```python
+shopping_cart = [['tooth paste', 'q-tips', 'milk'],['milk', 'candy', 'apples'],['planner', 'pencils', 'q-tips']]
+update_list(shopping_cart, 1, 1, "peppers")
+```
+*Output:*
+```python
+[['tooth paste', 'q-tips', 'milk'],['milk', 'peppers', 'apples'],['planner', 'pencils', 'q-tips']]
+```
+
+---
 ### **Objective:** Combine all items from nested shopping lists into a single list.
 
 **Function: `all_in_one(list)`**  
