@@ -1,7 +1,5 @@
 # 7.3-Nested-Lists
 
-## PART ONE 
-
 ### update_list(list, list_index, item_index, item)
 This function updates a shopping list. It takes in an index value for the shopping list the user wants to update, which position it should update, and the new value to update. Does not alter the length of the list. The updated list is updated.
 
@@ -50,7 +48,6 @@ view_item(shopping_cart,2,0)
 planner
 ```
 <br></br>
-## PART TWO 
 
 ### all_in_one(list)
 This function will put all the shopping lists into a single list using a for loop. It will then return the list.
