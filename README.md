@@ -1,129 +1,163 @@
-# 7.3-Nested-Lists
 
-### update_list(list, list_index, item_index, item)
-This function updates a shopping list. It takes in an index value for the shopping list the user wants to update, which position it should update, and the new value to update. Does not alter the length of the list. The updated list is updated.
 
-Example:
+Here’s a revised version of the assignment with clearer objectives for each challenge:
+
+---
+
+### 7.3-Nested-Lists
+
+---
+
+### **Objective:** Update a specific item in a nested shopping list.
+
+**Function: `update_list(list, list_index, item_index, item)`**  
+This function updates an item at a given position in a specific shopping list (within a nested list). It does not alter the length of the list, only the item at the specified index.
+
+**Example:**
 
 *Function call:*
-```python 
+```python
 shopping_cart = [['tooth paste', 'q-tips', 'milk'],['milk', 'candy', 'apples'],['planner', 'pencils', 'q-tips']]
-
 update_list(shopping_cart, 1, 1, "peppers")
 ```
 *Output:*
 ```python
 [['tooth paste', 'q-tips', 'milk'],['milk', 'peppers', 'apples'],['planner', 'pencils', 'q-tips']]
 ```
-<br></br>
-### view_list(list, list_index)
-This function returns the shopping list the user wants and returns all of the items associated with that shopping list.
 
-Example:
+---
+
+### **Objective:** View all items in a specific shopping list within a nested list.
+
+**Function: `view_list(list, list_index)`**  
+This function retrieves and returns all the items in a specific shopping list from a nested list of shopping lists.
+
+**Example:**
 
 *Function call:*
 ```python
 shopping_cart = [['tooth paste', 'q-tips', 'milk'],['milk', 'candy', 'apples'],['planner', 'pencils', 'q-tips']]
-
-view_list(shopping_cart,0) 
+view_list(shopping_cart, 0)
 ```
 *Output:*
 ```python
 ['tooth paste', 'q-tips', 'milk']
 ```
 
-<br></br>
-### view_item(list, list_index, item_index)
-The functions returns the item stored a particular location within a list. The function takes in a shopping list the item is on and which position it occupies, then returns the items name.
+---
 
-Example:
+### **Objective:** Access a specific item in a shopping list at a given index.
 
-*Function call:*
-```python
-shopping_cart = [['tooth paste', 'q-tips', 'milk'],['milk', 'candy', 'apples'],['planner', 'pencils', 'q-tips']]
-view_item(shopping_cart,2,0) 
-```
-*Output:8
-```python
-planner
-```
-<br></br>
+**Function: `view_item(list, list_index, item_index)`**  
+This function accesses and returns an item from a specific position within a specific shopping list in a nested list.
 
-### all_in_one(list)
-This function will put all the shopping lists into a single list using a for loop. It will then return the list.
-
-Example:
+**Example:**
 
 *Function call:*
 ```python
 shopping_cart = [['tooth paste', 'q-tips', 'milk'],['milk', 'candy', 'apples'],['planner', 'pencils', 'q-tips']]
-
-all_in_one(shopping_cart) 
+view_item(shopping_cart, 2, 0)
 ```
 *Output:*
 ```python
-['tooth paste', 'q-tips', 'milk', 'milk', 'candy', 'apples','planner', 'pencils', 'q-tips']
+'planner'
 ```
-<br></br>
-### count_item(list, item)
-Create a function, count_item(), which will go through all items of the list and keep a count of how many times the item occurs. 
 
-Example:
+---
+
+### **Objective:** Combine all items from nested shopping lists into a single list.
+
+**Function: `all_in_one(list)`**  
+This function flattens a nested list by combining all individual shopping lists into one list.
+
+**Example:**
 
 *Function call:*
 ```python
 shopping_cart = [['tooth paste', 'q-tips', 'milk'],['milk', 'candy', 'apples'],['planner', 'pencils', 'q-tips']]
+all_in_one(shopping_cart)
+```
+*Output:*
+```python
+['tooth paste', 'q-tips', 'milk', 'milk', 'candy', 'apples', 'planner', 'pencils', 'q-tips']
+```
 
-count_item(shopping_cart, "milk") 
+---
+
+### **Objective:** Count the occurrences of a specific item across all shopping lists.
+
+**Function: `count_item(list, item)`**  
+This function counts how many times a specific item appears across all shopping lists in the nested list.
+
+**Example:**
+
+*Function call:*
+```python
+shopping_cart = [['tooth paste', 'q-tips', 'milk'],['milk', 'candy', 'apples'],['planner', 'pencils', 'q-tips']]
+count_item(shopping_cart, "milk")
 ```
 *Output:*
 ```python
 2
 ```
-<br></br>
-### drink_more_milk(list)
-In order to make the shopping lists more calcium rich, write a function, drink_more_milk, that adds 'milk' to each of the lists (unless it's already there). Return new list
 
-Example:
+---
+
+### **Objective:** Add "milk" to every shopping list if it's not already present.
+
+**Function: `drink_more_milk(list)`**  
+This function ensures that "milk" is added to each shopping list in the nested list, unless it's already there.
+
+**Example:**
 
 *Function call:*
 ```python
 shopping_cart = [['tooth paste', 'q-tips', 'milk'],['milk', 'candy', 'apples'],['planner', 'pencils', 'q-tips']]
-
-drink_more_milk(shopping_cart) 
+drink_more_milk(shopping_cart)
 ```
 *Output:*
 ```python
 [['tooth paste', 'q-tips', 'milk'],['milk', 'candy', 'apples'],['planner', 'pencils', 'q-tips', 'milk']]
 ```
-<br></br>
-### if_you_give_a_moose_a_cookie(list)
-You can't have milk without cookies. Write a function if_you_give_a_moose_a_cookie, that will go through every element of shopping_cart and update 'milk' to be 'milk and cookies'. Return new list.
 
-Example:
+---
+
+### **Objective:** Modify "milk" to "milk and cookies" in all lists.
+
+**Function: `if_you_give_a_moose_a_cookie(list)`**  
+This function updates every occurrence of "milk" in the shopping lists to "milk and cookies."
+
+**Example:**
 
 *Function call:*
 ```python
 shopping_cart = [['tooth paste', 'q-tips', 'milk'],['milk', 'candy', 'apples'],['planner', 'pencils', 'q-tips']]
-
-if_you_give_a_moose_a_cookie(shopping_cart) 
+if_you_give_a_moose_a_cookie(shopping_cart)
 ```
 *Output:*
 ```python
 [['tooth paste', 'q-tips', 'milk and cookies'],['milk and cookies', 'candy', 'apples'],['planner', 'pencils', 'q-tips']]
 ```
-<br></br>
-### reverse_lists_and_items(list)
-Write a function to reverse the order of the lists and items in the list. The function return the reversed list with reversed items. Return new list.
 
-Example:
+---
+
+### **Objective:** Reverse the order of both the lists and the items within them.
+
+**Function: `reverse_lists_and_items(list)`**  
+This function reverses the order of the shopping lists, as well as the order of items within each shopping list.
+
+**Example:**
 
 *Function call:*
 ```python
 shopping_cart = [['tooth paste', 'q-tips', 'milk'],['milk', 'candy', 'apples'],['planner', 'pencils', 'q-tips']]
-reverse_lists_and_items(shopping_cart):
+reverse_lists_and_items(shopping_cart)
 ```
 *Output:*
 ```python
-[['q-tips','pencil','planner'],['apples','candy','milk'],['milk','q-tips','tooth paste']]
+[['q-tips', 'pencils', 'planner'], ['apples', 'candy', 'milk'], ['milk', 'q-tips', 'tooth paste']]
 ```
+
+--- 
+
+These objectives clarify the function and expected outcome for each challenge.
