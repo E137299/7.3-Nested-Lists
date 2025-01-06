@@ -57,7 +57,7 @@ update_list(shopping_cart, 1, 1, "peppers")
 ```
 
 ---
-### **Objective:** Combine all items from nested shopping lists into a single list.
+### Combine all items from nested shopping lists into a single list.
 
 **Function: `all_in_one(list)`**  
 This function flattens a nested list by combining all individual shopping lists into one list.
@@ -76,7 +76,7 @@ all_in_one(shopping_cart)
 
 ---
 
-### **Objective:** Count the occurrences of a specific item across all shopping lists.
+### Count the occurrences of a specific item across all shopping lists.
 
 **Function: `count_item(list, item)`**  
 This function counts how many times a specific item appears across all shopping lists in the nested list.
@@ -95,7 +95,7 @@ count_item(shopping_cart, "milk")
 
 ---
 
-### **Objective:** Add "milk" to every shopping list if it's not already present.
+### Add "milk" to every shopping list if it's not already present.
 
 **Function: `drink_more_milk(list)`**  
 This function ensures that "milk" is added to each shopping list in the nested list, unless it's already there.
@@ -114,7 +114,7 @@ drink_more_milk(shopping_cart)
 
 ---
 
-### **Objective:** Modify "milk" to "milk and cookies" in all lists.
+### Modify "milk" to "milk and cookies" in all lists.
 
 **Function: `if_you_give_a_moose_a_cookie(list)`**  
 This function updates every occurrence of "milk" in the shopping lists to "milk and cookies."
@@ -133,7 +133,7 @@ if_you_give_a_moose_a_cookie(shopping_cart)
 
 ---
 
-### **Objective:** Reverse the order of both the lists and the items within them.
+### Reverse the order of both the lists and the items within them.
 
 **Function: `reverse_lists_and_items(list)`**  
 This function reverses the order of the shopping lists, as well as the order of items within each shopping list.
@@ -149,7 +149,3 @@ reverse_lists_and_items(shopping_cart)
 ```python
 [['q-tips', 'pencils', 'planner'], ['apples', 'candy', 'milk'], ['milk', 'q-tips', 'tooth paste']]
 ```
-
---- 
-
-These objectives clarify the function and expected outcome for each challenge.
