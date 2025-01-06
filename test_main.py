@@ -24,9 +24,9 @@ def test_drink_more_milk():
     assert drink_more_milk([['tooth paste', 'q-tips', 'milk'],['milk', 'candy', 'apples'],['planner', 'pencils', 'q-tips']]) == [['tooth paste', 'q-tips', 'milk'],['milk', 'candy', 'apples'],['planner', 'pencils', 'q-tips', 'milk']]
     assert drink_more_milk([["a","b","c"],["d","e","f"],["g","h","j"]]) == [["a","b","c","milk"],["d","e","f","milk"],["g","h","j","milk"]]
 
-def test_if_you_give_a_moose_a_cookie():
-    assert if_you_give_a_moose_a_cookie([['tooth paste', 'q-tips', 'milk'],['milk', 'candy', 'apples'],['planner', 'pencils', 'q-tips']]) == [['tooth paste', 'q-tips', 'milk and cookies'],['milk and cookies', 'candy', 'apples'],['planner', 'pencils', 'q-tips']]
-    assert if_you_give_a_moose_a_cookie([["a","b","c"],["d","e","f"],["g","h","j"]]) == [["a","b","c"],["d","e","f"],["g","h","j"]]
+def test_add_a_cookie():
+    assert if_add_a_cookie([['tooth paste', 'q-tips', 'milk'],['milk', 'candy', 'apples'],['planner', 'pencils', 'q-tips']]) == [['tooth paste', 'q-tips', 'milk and cookies'],['milk and cookies', 'candy', 'apples'],['planner', 'pencils', 'q-tips']]
+    assert if_add_a_cookie([["a","b","c"],["d","e","f"],["g","h","j"]]) == [["a","b","c"],["d","e","f"],["g","h","j"]]
 
 def test_reverse_lists_and_items():
     assert reverse_lists_and_items([['tooth paste', 'q-tips', 'milk'],['milk', 'candy', 'apples'],['planner', 'pencils', 'q-tips']]) == [['q-tips','pencils','planner'],['apples','candy','milk'],['milk','q-tips','tooth paste']]
