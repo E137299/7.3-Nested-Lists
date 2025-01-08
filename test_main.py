@@ -13,7 +13,7 @@ def test_view_item():
     assert view_item([["a","b","c"],["d","e","f"],["g","h","j"]],1,0) == "d"
 
 def test_all_in_one():
-    assert all_in_one([['tooth paste', 'q-tips', 'milk'],['milk', 'candy', 'apples'],['planner', 'pencils', 'q-tips']]) == ['tooth paste', 'q-tips', 'milk', 'milk', 'candy', 'apples','planner', 'pencils', 'q-tips']
+    assert all_in_one([['tooth paste', 'q-tips', 'milk'],['milk', 'candy', 'apples'],['planner', 'pencils', 'q-tips']]) == ['tooth paste', 'q-tips', 'milk', 'candy', 'apples','planner', 'pencils', 'q-tips']
     assert all_in_one([["a","b","c"],["d","e","f"],["g","h","j"]]) == ["a","b","c","d","e","f","g","h","j"]
 
 def test_count_item():
